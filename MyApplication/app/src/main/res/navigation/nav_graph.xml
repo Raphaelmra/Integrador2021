@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/materiaPrima">
+
+    <fragment
+        android:id="@+id/epiFinal"
+        android:name="com.example.myapplication.EpiFinal"
+        android:label="fragment_epi_final"
+        tools:layout="@layout/fragment_epi_final" />
+    <fragment
+        android:id="@+id/materiaPrima"
+        android:name="com.example.myapplication.MateriaPrima"
+        android:label="fragment_materia_prima"
+        tools:layout="@layout/fragment_materia_prima" />
+    <fragment
+        android:id="@+id/biotecnologia2"
+        android:name="com.example.myapplication.Biotecnologia"
+        android:label="fragment_biotecnologia"
+        tools:layout="@layout/fragment_biotecnologia" />
+</navigation>

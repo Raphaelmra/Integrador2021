@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/epiFinal" android:title="Epi Final" android:icon="@drawable/ic_masks" />
+    <item android:id="@+id/materiaPrima" android:title="Matéria Prima" android:icon="@drawable/ic_florist" />
+    <item android:id="@+id/biotecnologia2"  android:title="Biotecnologia" android:icon="@drawable/ic_language" />
+</menu>
