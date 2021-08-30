@@ -3,36 +3,80 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity2">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="123dp"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="voltarTela1"
-        android:text="Voltar"
-        app:backgroundTint="#8A6767"
+        android:layout_marginTop="216dp"
+        android:tint="@color/grp1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/img_grayroundedbkg" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_backbtn"
+        android:onClick="voltarTela1"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="123dp"
-        android:layout_height="wrap_content"
+        android:layout_width="235dp"
+        android:layout_height="55dp"
         android:onClick="irTelaCadastro"
         android:text="Login"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/blp2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.647" />
+
+    <EditText
+        android:id="@+id/Senha"
+        android:layout_width="337dp"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Senha"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+
+    <EditText
+        android:id="@+id/Usuario"
+        android:layout_width="337dp"
+        android:layout_height="71dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CPF ou CNPJ"
+        app:layout_constraintBottom_toTopOf="@+id/Senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967" />
 
     <Button
         android:id="@+id/button6"
@@ -44,37 +88,38 @@
         app:backgroundTint="#05FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintVertical_bias="0.167" />
 
-    <EditText
-        android:id="@+id/Usuario"
+    <TextView
+        android:id="@+id/txtTitleScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="CPF ou CNPJ"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/Senha"
+    <TextView
+        android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Senha"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Bem-Vindo"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Usuario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleScreen"
+        app:layout_constraintVertical_bias="0.283" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
