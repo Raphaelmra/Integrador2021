@@ -7,30 +7,49 @@
     android:orientation="vertical"
     tools:context=".MainActivity9">
 
-    <Button
-        android:id="@+id/areafor"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="irParaTela2"
-        android:text="Área do fornecedor"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="288dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        app:srcCompat="@drawable/img_grayroundedbkg"
+        app:tint="@color/grp1" />
+
+    <Button
+        android:id="@+id/areafor"
+        android:layout_width="329dp"
+        android:layout_height="74dp"
+        android:onClick="irParaTela2"
+        android:text="Área do fornecedor"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blp2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buscar"
+        app:layout_constraintVertical_bias="0.22" />
 
     <Button
         android:id="@+id/buscar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="64dp"
         android:onClick="irParaTela9"
-        android:text="Buscar EPI"
+        android:text="Pesquisar"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blp2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459" />
+        app:layout_constraintVertical_bias="0.637" />
 
     <Button
         android:id="@+id/creditos"
@@ -38,10 +57,53 @@
         android:layout_height="wrap_content"
         android:onClick="irParaTela2"
         android:text="Créditos"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="@color/blp2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/areafor"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <TextView
+        android:id="@+id/txtBuscaRapida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Busca Rápida"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtBemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo ao"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653" />
+        app:layout_constraintVertical_bias="0.096" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="314dp"
+        android:layout_height="57dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Pesquisar"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBuscaRapida" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
