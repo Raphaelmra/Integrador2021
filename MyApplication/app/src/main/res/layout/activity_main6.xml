@@ -15,10 +15,13 @@
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="wrap_content"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:onClick="irTela8"
             android:text="Avançar"
+            android:textColor="@color/black"
+            android:translationX="280dp"
+            app:backgroundTint="@color/blp1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
@@ -33,6 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
 
+        app:itemIconTint="@color/blp2"
+        app:itemTextColor="@color/black"
         app:menu="@menu/bottom_menu" />
 
 
